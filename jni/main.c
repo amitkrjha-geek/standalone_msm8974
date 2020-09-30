@@ -81,7 +81,7 @@ void find_symbols(void) {
 }
 
 /**
- * Elevates privileges to root. Execute only within the kernel.
+ * Elevates privileges to root.Executio of this is only within the kernel.
  */
 void elevate_to_root(void) {
 	struct cred* c = prepare_creds();
@@ -112,7 +112,7 @@ void flush_caches(void) {
  * Reads a single DWORD value from the given physical memory address.
  * @param addr The physical memory address.
  * @param val The pointer to which the read value is written.
- * @return Zero if successful, a negative linux error code otherwise.
+ * @return Zero if successful,a negative linux error code otherwise.
  */
 int read_phys(uint32_t addr, uint32_t* val) {
 
